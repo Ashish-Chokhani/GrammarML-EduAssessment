@@ -60,6 +60,10 @@ To develop a machine learning-powered application that evaluates grammar and pro
 - **Tools**: ffmpeg
 - **Database**: SQLite (with ER diagram for reference)
 
+## 🚨 Don't forget to check out this amazing report and presentation in the docs/ folder for more insights into the project!
+Project Presentation (PDF) [https://github.com/Ashish-Chokhani/GrammarML-EduAssessment/blob/main/docs/BTP_report2.pdf]
+Project Presentation (Video) [https://github.com/Ashish-Chokhani/GrammarML-EduAssessment/blob/main/docs/btp2_final_presentation.mp4]
+
 ## 🤝 Contributions
 Contributions are welcome! Please open an issue or submit a pull request if you have any improvements or suggestions.
 
