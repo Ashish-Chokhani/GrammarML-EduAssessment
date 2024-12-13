@@ -32,9 +32,8 @@ To develop a machine learning-powered application that evaluates grammar and pro
 ## 📂 Project Structure
 
 - `src/`: Contains core implementations, including functions for grammar checking, GoP extraction, and speech processing.
-- `ui/`: Includes the front-end components such as the login page and jumbled sentence interface.
-- `data/`: Stores audio files, transcriptions, and database backups.
-- `models/`: Integrates the Kaldi speech model for pronunciation assessment.
+- `frontend/`: Includes the front-end components such as the login page and jumbled sentence interface.
+- `backend/`: Stores audio files, transcriptions, and database backups.
 - `docs/`: Contains the ER diagram and additional documentation.
 
 ## 📊 Key Components
