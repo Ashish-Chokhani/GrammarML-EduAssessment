@@ -61,13 +61,13 @@ To develop a machine learning-powered application that evaluates grammar and pro
 - **Tools**: ffmpeg
 - **Database**: SQLite (with ER diagram for reference)
 
-🤝 Contributions
-Contributions are welcome! 
+## 🤝 Contributions
+Contributions are welcome! Please open an issue or submit a pull request if you have any improvements or suggestions.
 
-👨‍💻 Authors and Mentors
+## 👨‍💻 Authors and Mentors
 - Ashish Chokhani
 - Ishit Bansal
 - Manuj Garg
-Guide: Dr. Ramesh Loganathan
-Mentor: Arjun Sir
-Panel: Rajakrishnan Sir
+`Guide`: Dr. Ramesh Loganathan
+`Mentor`: Arjun Sir
+`Panel`: Rajakrishnan Sir
