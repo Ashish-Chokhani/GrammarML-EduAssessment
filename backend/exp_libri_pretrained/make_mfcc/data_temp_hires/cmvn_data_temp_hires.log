@@ -1,0 +1,2 @@
+compute-cmvn-stats --spk2utt=ark:data/data_temp_hires/spk2utt scp:data/data_temp_hires/feats.scp ark,scp:/home/ishitbansal/Semester-7/BTP-2/demo-code/backend/dump/mfcc_data/data_temp_hires/cmvn_data_temp_hires.ark,/home/ishitbansal/Semester-7/BTP-2/demo-code/backend/dump/mfcc_data/data_temp_hires/cmvn_data_temp_hires.scp 
+LOG (compute-cmvn-stats[5.5.1156~3-5bfb]:main():compute-cmvn-stats.cc:171) Done accumulating CMVN stats for 1 utterances; 0 had errors.
