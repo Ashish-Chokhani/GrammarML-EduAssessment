@@ -1,0 +1,17 @@
+# compile-train-graphs --read-disambig-syms=data/lang_test_tgmed/phones/disambig.int force_align_data_temp/tree exp_libri_pretrained/chain_cleaned/tdnn_1d_sp/final.mdl data/lang_test_tgmed/L.fst "ark:utils/sym2int.pl --map-oov 3 -f 2- data/lang_test_tgmed/words.txt data/data_temp_hires/split1/1/text|" ark:- | nnet3-align-compiled --transition-scale=1.0 --acoustic-scale=1.0 --self-loop-scale=1.0 --online-ivectors=scp:exp_libri_pretrained/nnet3_cleaned/ivectors_data_temp_hires/ivector_online.scp --online-ivector-period=10 --frames-per-chunk=50 --extra-left-context=0 --extra-right-context=0 --extra-left-context-initial=-1 --extra-right-context-final=-1 --use-gpu=no --beam=10 --retry-beam=40 exp_libri_pretrained/chain_cleaned/tdnn_1d_sp/final.mdl ark:- "ark,s,cs:apply-cmvn --norm-means=false --norm-vars=false --utt2spk=ark:data/data_temp_hires/split1/1/utt2spk scp:data/data_temp_hires/split1/1/cmvn.scp scp:data/data_temp_hires/split1/1/feats.scp ark:- |" "ark:|gzip -c >force_align_data_temp/ali.1.gz" 
+# Started at Wed Nov  6 16:16:44 IST 2024
+#
+compile-train-graphs --read-disambig-syms=data/lang_test_tgmed/phones/disambig.int force_align_data_temp/tree exp_libri_pretrained/chain_cleaned/tdnn_1d_sp/final.mdl data/lang_test_tgmed/L.fst 'ark:utils/sym2int.pl --map-oov 3 -f 2- data/lang_test_tgmed/words.txt data/data_temp_hires/split1/1/text|' ark:- 
+nnet3-align-compiled --transition-scale=1.0 --acoustic-scale=1.0 --self-loop-scale=1.0 --online-ivectors=scp:exp_libri_pretrained/nnet3_cleaned/ivectors_data_temp_hires/ivector_online.scp --online-ivector-period=10 --frames-per-chunk=50 --extra-left-context=0 --extra-right-context=0 --extra-left-context-initial=-1 --extra-right-context-final=-1 --use-gpu=no --beam=10 --retry-beam=40 exp_libri_pretrained/chain_cleaned/tdnn_1d_sp/final.mdl ark:- 'ark,s,cs:apply-cmvn --norm-means=false --norm-vars=false --utt2spk=ark:data/data_temp_hires/split1/1/utt2spk scp:data/data_temp_hires/split1/1/cmvn.scp scp:data/data_temp_hires/split1/1/feats.scp ark:- |' 'ark:|gzip -c >force_align_data_temp/ali.1.gz' 
+LOG (nnet3-align-compiled[5.5.1156~3-5bfb]:RemoveOrphanNodes():nnet-nnet.cc:948) Removed 1 orphan nodes.
+LOG (nnet3-align-compiled[5.5.1156~3-5bfb]:RemoveOrphanComponents():nnet-nnet.cc:847) Removing 2 orphan components.
+LOG (nnet3-align-compiled[5.5.1156~3-5bfb]:Collapse():nnet-utils.cc:1488) Added 1 components, removed 2
+LOG (compile-train-graphs[5.5.1156~3-5bfb]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 1 graphs, failed for 0
+apply-cmvn --norm-means=false --norm-vars=false --utt2spk=ark:data/data_temp_hires/split1/1/utt2spk scp:data/data_temp_hires/split1/1/cmvn.scp scp:data/data_temp_hires/split1/1/feats.scp ark:- 
+LOG (apply-cmvn[5.5.1156~3-5bfb]:main():apply-cmvn.cc:81) Copied 1 utterances.
+LOG (nnet3-align-compiled[5.5.1156~3-5bfb]:main():nnet3-align-compiled.cc:198) Overall log-likelihood per frame is 4.2531 over 544 frames.
+LOG (nnet3-align-compiled[5.5.1156~3-5bfb]:main():nnet3-align-compiled.cc:201) Retried 0 out of 1 utterances.
+LOG (nnet3-align-compiled[5.5.1156~3-5bfb]:main():nnet3-align-compiled.cc:203) Done 1, errors on 0
+LOG (nnet3-align-compiled[5.5.1156~3-5bfb]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 0.0562 seconds taken in nnet3 compilation total (breakdown: 0.0451 compilation, 0.00709 optimization, 0 shortcut expansion, 0.00112 checking, 3.81e-06 computing indexes, 0.00288 misc.) + 0 I/O.
+# Accounting: time=3 threads=1
+# Ended (code 0) at Wed Nov  6 16:16:47 IST 2024, elapsed time 3 seconds

@@ -1,0 +1,8 @@
+# gunzip -c force_align_data_temp/phone_stats.*.gz | steps/diagnostic/analyze_phone_length_stats.py data/lang_test_tgmed 
+# Started at Wed Nov  6 16:16:47 IST 2024
+#
+bash: line 1: steps/diagnostic/analyze_phone_length_stats.py: Permission denied
+
+gzip: stdout: Broken pipe
+# Accounting: time=0 threads=1
+# Ended (code 126) at Wed Nov  6 16:16:47 IST 2024, elapsed time 0 seconds
