@@ -68,6 +68,8 @@ Contributions are welcome! Please open an issue or submit a pull request if you 
 - Ashish Chokhani
 - Ishit Bansal
 - Manuj Garg
+
+  
 `Guide`: Dr. Ramesh Loganathan
 `Mentor`: Arjun Sir
 `Panel`: Rajakrishnan Sir
